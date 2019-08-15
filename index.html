@@ -9,10 +9,11 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js">
 </head>
 
 <body>
+
+
     <div class="m-3">
         <div class="jumbotron jumbotron-fluid bg-dark text-center">
             <div class="container">
@@ -34,7 +35,7 @@
                     <th scope="col">Minutes Away</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody id="table">
                 <tr>
                     <th scope="row">1</th>
                     <td>Mark</td>
@@ -63,23 +64,28 @@
         <form>
             <div class="form-group">
                 <label for="exampleInputEmail1">Train Name</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
+                <input type="text" class="form-control" id="name">
             </div>
             <div class="form-group">
                 <label for="exampleInputPassword1">Destination</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
+                <input type="text" class="form-control" id="destination">
             </div>
             <div class="form-group">
                 <label for="exampleInputPassword1">First Train Time (HH:mm-Military Time)</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
+                <input type="text" class="form-control" id="time">
             </div>
             <div class="form-group">
                 <label for="exampleInputPassword1">Frequency(min)</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
+                <input type="text" class="form-control" id="frequency">
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary" id="submit">Submit</button>
         </form>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/localforage/1.7.3/localforage.js" integrity="sha256-3NP4l3uenVxIZ0vLGnUjjObImjaJltaSzAHaGUr+yDA=" crossorigin="anonymous"></script>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js" integrity="sha256-H9jAz//QLkDOy/nzE9G4aYijQtkLt9FvGmdUTwBk6gs=" crossorigin="anonymous"></script>
+
     <script src="script.js"></script>
 </body>
 
